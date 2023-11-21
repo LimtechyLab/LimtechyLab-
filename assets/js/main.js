@@ -243,3 +243,19 @@
   });
 
 })()
+
+
+const contactBtn = document.querySelector('.btn-contact');
+const contact = document.querySelector('.contact-details');
+const details = document.querySelector('.details');
+const closeContact = document.querySelector('.close-details');
+
+contactBtn.addEventListener('click', ()=>{
+ contact.style.display = "block"
+ details.style.display = "block"
+
+});
+
+closeContact.addEventListener('click', ()=>{
+  contact.style.display = "none"
+ });
